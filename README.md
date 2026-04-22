@@ -1,37 +1,40 @@
-# ai-commit 🤖
+# claude-autocommit 🤖
 
-> Automatically generate meaningful git commit messages using Claude AI.
+> Never write a git commit message again. Let Claude AI do it for you.
 
-![npm version](https://img.shields.io/npm/v/ai-commit)
-![npm downloads](https://img.shields.io/npm/dm/ai-commit)
-![GitHub stars](https://img.shields.io/github/stars/LakshitSharma1/ai-commit)
+![npm version](https://img.shields.io/npm/v/@lakshitsharma1/claude-autocommit)
+![npm downloads](https://img.shields.io/npm/dm/@lakshitsharma1/claude-autocommit)
+![GitHub stars](https://img.shields.io/github/stars/LakshitSharma1/claude-autocommit)
+![License](https://img.shields.io/badge/license-MIT-blue)
 
-## ✨ What it does
+## ✨ The Problem
 
-Instead of writing commit messages manually, `ai-commit` reads your staged changes and generates a clear, conventional commit message using Claude AI.
+You just wrote 200 lines of code. Now you have to write a commit message.
+
+We've all been there. **claude-autocommit fixes this.**
+
+## 🚀 How It Works
+
+1. You stage your changes with `git add`
+2. Run `claude-autocommit`
+3. Claude reads your diff and generates a meaningful commit message
+4. Done ✅
+
+## 📦 Installation
 
 ```bash
-# Before
-git add .
-git commit -m "stuff"
-
-# After
-git add .
-ai-commit
-# ✅ Generated: feat: add user authentication with JWT tokens
-```
-
-## 🚀 Installation
-
-```bash
-npm install -g ai-commit
+npm install -g @lakshitsharma1/claude-autocommit
 ```
 
 ## ⚙️ Setup
 
-Get your API key from [console.anthropic.com](https://console.anthropic.com)
+Get your free API key from [console.anthropic.com](https://console.anthropic.com)
 
 ```bash
+# Windows (PowerShell)
+$env:ANTHROPIC_API_KEY="your-api-key"
+
+# Mac/Linux
 export ANTHROPIC_API_KEY="your-api-key"
 ```
 
@@ -41,14 +44,19 @@ export ANTHROPIC_API_KEY="your-api-key"
 # Stage your changes
 git add .
 
-# Generate and commit
-ai-commit
+# Let Claude generate your commit message
+claude-autocommit
 ```
 
 ## 🤝 Contributing
 
-Contributions welcome! Please open an issue or PR.
+Contributions, issues and feature requests are welcome!
+Feel free to check [issues page](https://github.com/LakshitSharma1/claude-autocommit/issues).
+
+## ⭐ Support
+
+If this project helped you, please give it a **star** on GitHub!
 
 ## 📄 License
 
-MIT
+MIT © [LakshitSharma1](https://github.com/LakshitSharma1)
